@@ -16,18 +16,16 @@ public interface AccountRepo extends JpaRepository<Account, Long> {
     /**
      * [로그인] 계정이 존재하는지 체크하는 메서드
      * @param id
-     * @param enPw
      * @return
      */
-    boolean existsByIdAndPassword(String id, String enPw);
+    boolean existsById(String id);
 
     /**
      * [로그인] ID와 PW로 사용자 검색
      * @param id
-     * @param enPw
      * @return
      */
-    Optional<Account> findByIdAndPassword(String id, String enPw);
+    Optional<Account> findById(String id);
 
 
 

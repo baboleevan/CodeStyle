@@ -3,6 +3,7 @@ package com.mhlab.codestyle.account;
 import com.mhlab.codestyle.account.enums.Status;
 import com.mhlab.codestyle.account.enums.Type;
 import com.mhlab.codestyle.common.models.DateTime;
+import com.mhlab.codestyle.common.utils.Utils;
 import lombok.*;
 
 import javax.persistence.*;
@@ -55,4 +56,39 @@ public class Account {
         this.userType = userType;
         this.status = status;
     }
+
+
+    /**
+     * 암호 검증 메서드
+     * @param checkPw
+     * @return
+     */
+    boolean validPw(String checkPw) {
+        return Utils.validEncryptStr(checkPw, this.password);
+    }
+
+    /**
+     * 슈퍼 유저인지 체크하는 메서드
+     * @return
+     */
+    boolean isSuperUser() {
+        return this.userType.isSuperUser();
+    }
+
+    /**
+     * 일반 사용자인지 체크하는 메서드
+     * @return
+     */
+    boolean isNormalUser() {
+        return this.userType.isNormalUser();
+    }
+
+    /**
+     * 기타 사용자인지 체크하는 메서드
+     * @return
+     */
+    boolean isEtcUser() {
+        return this.userType.isEtcUser();
+    }
+
 }

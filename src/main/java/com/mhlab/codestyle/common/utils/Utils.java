@@ -19,12 +19,12 @@ public class Utils {
 
     /**
      * 암호 검증을 처리하는 메서드
+     * @param sendStr
      * @param targetStr
-     * @param encryptStr
      * @return
      */
-    public static boolean validEncryptStr(String targetStr, String encryptStr) {
-        return BCrypt.checkpw(targetStr, encryptStr);
+    public static boolean validEncryptStr(String sendStr, String targetStr) {
+        return BCrypt.checkpw(sendStr, targetStr);
     }
 
 }

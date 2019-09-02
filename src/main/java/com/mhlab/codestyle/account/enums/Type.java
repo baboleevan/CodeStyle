@@ -21,7 +21,7 @@ public enum Type {
      * 슈퍼 관리자인지 체크하는 메서드
      * @return
      */
-    boolean isSuperUser() {
+    public boolean isSuperUser() {
         return this.equals(ROOT);
     }
 
@@ -29,7 +29,7 @@ public enum Type {
      * 일반 사용자인지 체크해주는 메서드
      * @return
      */
-    boolean isNormalUser() {
+    public boolean isNormalUser() {
         return Arrays.asList(ADMIN, USER).contains(this);
     }
 
@@ -37,7 +37,7 @@ public enum Type {
      * 기타 사용자 인 경우
      * @return
      */
-    boolean isEtcUser() {
+    public boolean isEtcUser() {
         return Arrays.asList(GUEST, WAIT, ETC).contains(this);
     }
 
