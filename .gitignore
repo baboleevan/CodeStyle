@@ -1,6 +1,9 @@
 /build/
 !gradle/wrapper/gradle-wrapper.jar
 
+# H2 Sample DB
+sample_db.mv.db
+
 ### STS ###
 .apt_generated
 .classpath
