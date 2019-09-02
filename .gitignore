@@ -1,0 +1,45 @@
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/.gradle/5.2.1/executionHistory/executionHistory.bin
+/.gradle/5.2.1/executionHistory/executionHistory.lock
+/.gradle/5.2.1/fileChanges/last-build.bin
+/.gradle/5.2.1/fileContent/fileContent.lock
+/.gradle/5.2.1/fileHashes/fileHashes.bin
+/.gradle/5.2.1/fileHashes/fileHashes.lock
+/.gradle/5.2.1/fileHashes/resourceHashesCache.bin
+/.gradle/5.2.1/javaCompile/classAnalysis.bin
+/.gradle/5.2.1/javaCompile/jarAnalysis.bin
+/.gradle/5.2.1/javaCompile/javaCompile.lock
+/.gradle/5.2.1/javaCompile/taskHistory.bin
+/.gradle/5.2.1/gc.properties
+/.gradle/buildOutputCleanup/buildOutputCleanup.lock
+/.gradle/buildOutputCleanup/cache.properties
+/.gradle/buildOutputCleanup/outputFiles.bin
+/.gradle/vcs-1/gc.properties
+/src/main/resources/static/docs/index.html
+
+# Etc
+/tmp_files
