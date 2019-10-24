@@ -1,5 +1,6 @@
 package com.mhlab.codestyle.account;
 
+import com.mhlab.codestyle.common.annotations.PerformanceLog;
 import com.mhlab.codestyle.common.vo.JsonResult;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -31,6 +32,7 @@ public class AccountController {
      * @param dto
      * @return
      */
+    @PerformanceLog
     @ResponseBody
     @PostMapping("users/login")
     public JsonResult<AccountDto.LoginResult> postLogin(HttpServletRequest request,  @RequestBody AccountDto.Login dto) {
